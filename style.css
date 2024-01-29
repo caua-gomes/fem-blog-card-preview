@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Figtree:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #f4d04e;
+  font-family: "Figtree", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 380px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  border: 1px solid #000;
+  box-shadow: #000 10px 8px;
+}
+
+.main-img {
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.description {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.description h3 {
+  padding: 8px;
+  background-color: #f4d04e;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.main-title {
+  font-size: 26px;
+  margin-bottom: 14px;
+  font-weight: 800;
+}
+
+.main-paragraph {
+  color: #808080;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.author-avatar {
+  width: 36px;
+}
+
+.author-name {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 400px;
+    height: auto;
+  }
+
+  .main-img {
+    margin-top: 20px;
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 280px;
+    height: auto;
+  }
+
+  .main-img {
+    margin-top: 14px;
+    width: 250px;
+  }
+}
